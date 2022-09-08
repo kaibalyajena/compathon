@@ -1,0 +1,15 @@
+body{
+    padding: 0;
+    margin: 10px;
+
+    text-align: center;
+    background-color: #2e2e2e;
+}
+
+button{
+    padding: 10px;
+    font-weight: bold;
+
+    background-color: #eee;
+    color: #000;
+}

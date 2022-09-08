@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="textAnimation.css">
+</head>
+<body>
+    <section>
+        <h2 id="text">UniNMe</h2>
+    </section>
+
+    <div class="sec" id="sec">
+    <h2>Parallax Scrolling Effects</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Aliquid soluta voluptates eveniet quis non, temporibus perferendis tempora minima corporis fugiat autem ratione,
+        beatae sapiente! Similique ad delectus aliquam ex praesentium!. Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit. Dolores blanditiis culpa quisquam neque natus ex,
+        ratione voluptatibus eligendi deleniti reiciendis hic id,
+        quidem laboriosam vero asperiores ut, sapiente sed in? <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Aliquid soluta voluptates eveniet quis non, temporibus perferendis tempora minima corporis fugiat autem ratione,
+        beatae sapiente! Similique ad delectus aliquam ex praesentium!. Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit. Dolores blanditiis culpa quisquam neque natus ex,
+        ratione voluptatibus eligendi deleniti reiciendis hic id,
+        quidem laboriosam vero asperiores ut, sapiente sed in? <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Aliquid soluta voluptates eveniet quis non, temporibus perferendis tempora minima corporis fugiat autem ratione,
+        beatae sapiente! Similique ad delectus aliquam ex praesentium!. Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit. Dolores blanditiis culpa quisquam neque natus ex,
+        ratione voluptatibus eligendi deleniti reiciendis hic id,
+        quidem laboriosam vero asperiores ut, sapiente sed in? <br><br>Lorem ipsum dolor sit amet consectetur adipisicing
+        elit.
+        Aliquid soluta voluptates eveniet quis non, temporibus perferendis tempora minima corporis fugiat autem ratione,
+        beatae sapiente! Similique ad delectus aliquam ex praesentium!. Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit. Dolores blanditiis culpa quisquam neque natus ex,
+        ratione voluptatibus eligendi deleniti reiciendis hic id,
+        quidem laboriosam vero asperiores ut, sapiente sed in? <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Aliquid soluta voluptates eveniet quis non, temporibus perferendis tempora minima corporis fugiat autem ratione,
+        beatae sapiente! Similique ad delectus aliquam ex praesentium!. Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit. Dolores blanditiis culpa quisquam neque natus ex,
+        ratione voluptatibus eligendi deleniti reiciendis hic id,
+        quidem laboriosam vero asperiores ut, sapiente sed in? <br><br>
+        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Aliquid soluta voluptates eveniet quis non, temporibus perferendis tempora minima corporis fugiat autem ratione,
+        beatae sapiente! Similique ad delectus aliquam ex praesentium!. Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit. Dolores blanditiis culpa quisquam neque natus ex,
+        ratione voluptatibus eligendi deleniti reiciendis hic id,
+        quidem laboriosam vero asperiores ut, sapiente sed in? <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Aliquid soluta voluptates eveniet quis non, temporibus perferendis tempora minima corporis fugiat autem ratione,
+        beatae sapiente! Similique ad delectus aliquam ex praesentium!. Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit. Dolores blanditiis culpa quisquam neque natus ex,
+        ratione voluptatibus eligendi deleniti reiciendis hic id,
+        quidem laboriosam vero asperiores ut, sapiente sed in? <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Aliquid soluta voluptates eveniet quis non, temporibus perferendis tempora minima corporis fugiat autem ratione,
+        beatae sapiente! Similique ad delectus aliquam ex praesentium!. Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit. Dolores blanditiis culpa quisquam neque natus ex,
+        ratione voluptatibus eligendi deleniti reiciendis hic id,
+        quidem laboriosam vero asperiores ut, sapiente sed in? <br><br>Lorem ipsum dolor sit amet consectetur adipisicing
+        elit.
+        </p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.marginRight = value * 3.5 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+        })
+    </script>
+</body>
+</html>

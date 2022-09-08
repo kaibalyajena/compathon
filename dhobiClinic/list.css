@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+:root {
+    --main-color: #F66B0E;
+    --white-color: #fff;
+}
+
+.container {
+    width: 350px;
+    background-color: var(--white-color);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.container .title {
+    color: var(--white-color);
+    line-height: 35px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--main-color);
+}
+
+.container .box {
+    padding: 20px 30px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+}
+
+.container .box label {
+    display: flex;
+    height: 53px;
+    width: 100%;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    margin: 10px 0;
+    padding-left: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.container .box input[type="radio"] {
+    display: none;
+}
+
+.container .box label .dot {
+    height: 20px;
+    width: 20px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.container .box label .dot::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+#option-1:checked~.option-1,
+#option-2:checked~.option-2,
+#option-3:checked~.option-3,
+#option-4:checked~.option-4,
+#option-5:checked~.option-5 {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+#option-1:checked~.option-1 .dot,
+#option-2:checked~.option-2 .dot,
+#option-3:checked~.option-3 .dot,
+#option-4:checked~.option-4 .dot,
+#option-5:checked~.option-5 .dot {
+    background-color: var(--white-color);
+}
+
+#option-1:checked~.option-1 .dot::before,
+#option-2:checked~.option-2 .dot::before,
+#option-3:checked~.option-3 .dot::before,
+#option-4:checked~.option-4 .dot::before,
+#option-5:checked~.option-5 .dot::before {
+    background-color: var(--main-color);
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.container .box label .text {
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 10px;
+    transition: 0.3s ease;
+}
+
+#option-1:checked~.option-1 .text,
+#option-2:checked~.option-2 .text,
+#option-3:checked~.option-3 .text,
+#option-4:checked~.option-4 .text,
+#option-5:checked~.option-5 .text {
+    color: var(--white-color);
+}
+    

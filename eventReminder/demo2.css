@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    font-size: 14px;
+    color: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    background: #111;
+           
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+
+    padding-bottom: 0px;
+}
+
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+
+    width: 610px; /*300px*/
+    height: 610px; /*300px*/
+
+    background: #fff;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006); */
+}
+
+/* .swiper-slide::after{
+
+} */
+
+.swiper-slide img {
+    /* display: block; */
+    width: 100%;
+}
